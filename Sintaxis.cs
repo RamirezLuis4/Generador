@@ -2,7 +2,7 @@
 using System;
 
 namespace Generador
-{
+{ 
     public class Sintaxis : Lexico
     {
         public Sintaxis()
@@ -19,6 +19,10 @@ namespace Generador
             if (espera == getContenido())
             {
                 NextToken();
+            }
+            else
+            {
+                throw new Error("Error de sintaxis, se espera un " +espera+" en linea: "+linea, log);
             }
         }
 

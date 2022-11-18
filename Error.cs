@@ -1,7 +1,6 @@
 //Luis Angel Ramirez Peña
 using System;
 using System.IO;
-
 namespace Generador
 {
     public class Error : Exception
